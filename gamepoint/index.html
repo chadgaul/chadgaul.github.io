@@ -1,1 +1,261 @@
-GamePoint Home
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePoint - The Ultimate Game Scoreboard</title>
+    <meta name="description" content="A simple, easy to use game scoreboard perfect for any occasion. Keep track of scores, set custom teams, and never miss a point again.">
+
+    <!-- Telemetry Deck Analytics -->
+    <script src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js" data-app-id="EE8F3160-0478-48E1-AA5E-124BA9AC80EA"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gp: {
+                            primary: '#16A34A',
+                            secondary: '#22C55E',
+                            dark: '#14532D',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gp-primary">🏀 GamePoint</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-gp-primary transition">Features</a>
+                    <a href="#pro" class="text-gray-700 hover:text-gp-primary transition">Pro</a>
+                    <a href="#download" class="text-gray-700 hover:text-gp-primary transition">Download</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gp-primary to-gp-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    The Ultimate Game Scoreboard
+                </h1>
+                <p class="text-xl md:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+                    A simple, easy to use game scoreboard perfect for any occasion. Can't see the scoring table? Keep track of the score on your device. Impromptu game? Forget the pen and paper—just use GamePoint.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#download" class="bg-white text-gp-primary px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
+                        Download Free
+                    </a>
+                    <a href="#features" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-gp-primary transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Everything You Need to Score
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Whether you're at a competitive event or enjoying a friendly match, GamePoint has you covered.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Teams</h3>
+                    <p class="text-gray-600">
+                        Assign names to home and away teams and customize team colors to match your matchup.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Flexible Scoring</h3>
+                    <p class="text-gray-600">
+                        Set points to win, choose the number of sets, matches, or periods, and enable win by two when needed.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">⏱️</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Built-in Timer</h3>
+                    <p class="text-gray-600">
+                        Start a timer right from the scoreboard. No need to switch between apps to keep track of game time.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">⚽</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Sport Presets</h3>
+                    <p class="text-gray-600">
+                        Get started instantly with sport presets that automatically configure scoring rules. More presets coming soon.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Quick Start</h3>
+                    <p class="text-gray-600">
+                        Jump into a game in seconds. No account required—just open the app and start scoring.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">✅</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Flexible Finish</h3>
+                    <p class="text-gray-600">
+                        Not using a preset? No problem. Mark a game as finished whenever you're ready.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GamePoint Pro Section -->
+    <section id="pro" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gradient-to-br from-gp-primary to-gp-secondary rounded-2xl p-8 text-white">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">⭐</div>
+                        <h3 class="text-2xl font-bold mb-4">GamePoint Pro</h3>
+                        <p class="text-green-100 mb-6">
+                            Take your scorekeeping to the next level. Unlock the full experience and never lose track of a game again.
+                        </p>
+                        <div class="bg-white text-gp-primary px-6 py-3 rounded-lg font-semibold inline-block">
+                            Upgrade in App
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Unlock GamePoint Pro
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-gp-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">
+                                ✓
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Saved Game History</h3>
+                                <p class="text-gray-600">Revisit past game results and see how the season or matchups played out over time.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-gp-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">
+                                ✓
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">iCloud Sync</h3>
+                                <p class="text-gray-600">Your game history syncs across all your devices when logged in to the same iCloud account.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-gp-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">
+                                ✓
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Season Tracking</h3>
+                                <p class="text-gray-600">Keep a running record of the whole season and look back on past matchups.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Ready to Start Scoring?
+            </h2>
+            <p class="text-xl text-gray-600 mb-10">
+                Download GamePoint today and never miss a point again.
+            </p>
+
+            <div class="flex justify-center mb-8">
+                <a href="https://apps.apple.com/us/app/scoreboard-gamepoint/id6633447665" class="inline-flex items-center bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition shadow-lg">
+                    <svg class="w-10 h-10 mr-4" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <div class="text-left">
+                        <div class="text-xs">Download on the</div>
+                        <div class="text-2xl font-semibold">App Store</div>
+                    </div>
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500">
+                Available for iOS • Free with optional Pro upgrade
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">🏀 GamePoint</h3>
+                    <p class="text-sm">
+                        The simple, easy to use game scoreboard for any occasion.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#pro" class="hover:text-white transition">GamePoint Pro</a></li>
+                        <li><a href="#download" class="hover:text-white transition">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacypolicy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 GamePoint. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
